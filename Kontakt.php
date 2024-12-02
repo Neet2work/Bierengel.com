@@ -2,8 +2,8 @@
 
     <!-- Hauptinhalt -->
     <main style="padding: 20px;">
-        <h2>Kontaktformular</h2>
-        <form action="kontaktformularVersenden.php" method="POST" style="max-width: 600px; margin: 0 auto;">
+        <h1>Kontaktformular</h1>
+        <form id="Kontaktformular" class="contact-form" style="max-width: 600px; margin: 0 auto;">
             <!-- Kundendaten -->
             <fieldset style="border: 1px solid #ccc; padding: 15px; margin-bottom: 20px;">
                 <legend style="font-weight: bold;">Kundendaten</legend>
@@ -31,8 +31,14 @@
             </fieldset>
 
             <!-- Senden-Button -->
-            <button type="submit" style="padding: 10px 20px; background-color: gold; color: black; border: none; border-radius: 5px; font-weight: bold; cursor: pointer;">
-                Absenden
-            </button>
+            <button type="submit" class="submit-button">
+            Absenden
+        </button>
         </form>
+    <script src="./assets/scripts/js/saveForm.js"></script>
+    <script>
+        document.getElementById("Kontaktformular").addEventListener("submit", function(event) {
+            saveFormData(event);
+        });
+    </script>
 <?php require_once "./layout/footer.php"; ?>

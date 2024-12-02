@@ -9,17 +9,19 @@
 <body>
     <!-- Header-Bereich -->
     <header>
+    <div style="text-align: right">
+        <form action="#" method="GET">
+            <input type="text" name="search" placeholder="Suche...">
+            <button type="submit">Suchen</button>
+        </form>
         <!-- Platzhalter für ein Bild, das später eingefügt wird -->
         <div style="height: 200px;"></div>
+
+    </div>
     </header>
 
     <!-- Suchfeld rechts oberhalb der Navigation -->
-    <div style="text-align: right; padding: 10px;">
-        <form action="#" method="GET">
-            <input type="text" name="search" placeholder="Suche..." style="padding: 5px;">
-            <button type="submit" style="padding: 5px;">Suchen</button>
-        </form>
-    </div>
+
 
     <!-- Navigationleiste -->
     <nav>

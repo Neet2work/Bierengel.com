@@ -2,10 +2,11 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-require_once "/xampp/htdocs/Bierengel.com/assets/layout/header.php";
+require_once "./layout/header.php";
 ?>
     <!-- Hauptinhalt -->
     <main>
+        <h1>Willkommen, bei den Bierengeln! (und Bengeln)</h1>
         <!-- Textbox 1 -->
         <section id="textbox1" style="text-align: left; margin-bottom: 50px;">
             <h2 style="text-transform: uppercase;">Textbox Eins</h2>

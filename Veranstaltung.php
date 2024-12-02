@@ -2,6 +2,7 @@
 
     <!-- Hauptinhalt -->
     <main>
+        <h1>Unsere Veranstaltungen und Feste!</h1>
         <!-- Textbox 1 -->
         <section id="textbox1" style="text-align: left; margin-bottom: 50px;">
             <h2 style="text-transform: uppercase;">Textbox Eins</h2>
