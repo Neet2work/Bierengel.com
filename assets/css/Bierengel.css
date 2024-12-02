@@ -1,0 +1,135 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    padding-top: 150px; /* Matches header height */
+    padding-bottom: 50px; /* Matches footer height */
+}
+
+/* Header */
+header {
+    height: 150px;
+    color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 0.5rem;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    background-color: white; /* Prevent transparency issues */
+}
+
+/* Navigation */
+nav {
+    background: linear-gradient(to right, black, darkred, gold);
+    background-blend-mode: overlay;
+    padding: 0.5rem 0;
+    text-align: center;
+    position: fixed;
+    top: 150px; /* Push below the search bar */
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Below the search bar */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: gold;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* Suchfeld Container */
+div.search-container {
+    position: fixed; /* Fix the position to the top-right */
+    top: 200px; /* Adjust to appear above the nav bar */
+    right: 20px; /* Position it to the right side */
+    z-index: 1100; /* Ensure it's above other elements */
+    text-align: right;
+    padding: 10px;
+}
+
+/* Input Field Styling */
+form input[type="text"] {
+    padding: 5px;
+    width: 200px;
+    border: 1px solid gold;
+    border-radius: 5px;
+    background-color: black;
+    color: silver;
+    position: relative;
+}
+
+form button {
+    padding: 5px 10px;
+    border: 1px solid red;
+    border-radius: 5px;
+    background-color: gold;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+}
+
+form button:hover {
+    background-color: red;
+    color: white;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    overflow-y: auto;
+    height: calc(100vh - 200px); /* Header (150px) + Footer (50px) */
+    box-sizing: border-box;
+}
+
+main h2 {
+    text-transform: uppercase;
+    color: gold;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to right, black, gold, silver, red);
+    color: white;
+    height: 50px;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 14px;
+    border-top: 2px solid red;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    overflow: hidden;
+}
