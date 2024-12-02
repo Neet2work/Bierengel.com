@@ -14,7 +14,7 @@ async function saveFormData(event) {
     });
 
     // Send data to the server
-const response = await fetch("/assets/scripts/php/saveToFile.php", {
+const response = await fetch("/Bierengel.com/assets/scripts/php/saveToFile.php", {
     method: "POST",
     headers: {
         "Content-Type": "application/json",

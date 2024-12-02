@@ -1,7 +1,11 @@
 <?php
+// saveToFile.php
+
+// Get the raw POST data
 $data = json_decode(file_get_contents("php://input"), true);
 
 if ($data) {
+    // Format the data as a string
     $content = "Kontaktformular Eingabe:\n";
     $content .= "Vorname: " . ($data['vorname'] ?? 'N/A') . "\n";
     $content .= "Name: " . ($data['name'] ?? 'N/A') . "\n";
@@ -11,17 +15,21 @@ if ($data) {
     $content .= "Beschreibung: " . ($data['beschreibung'] ?? 'N/A') . "\n";
     $content .= "------------------------\n";
 
-    $timestamp = date("Y-m-d_H-i-s");
-    $file = __DIR__ . "/submissions/Kontaktformular_$timestamp.txt";
+    // Generate a unique file name with timestamp and date
+    $timestamp = date("Y-m-d_H-i-s"); // Format: YYYY-MM-DD_HH-MM-SS
+    $file ="/Bierengel.com/assets/php/submissions/kontaktformular_$timestamp.txt";
+    echo "Saving file to: $file\n";
 
-    if (file_put_contents($file, $content)) {
-        http_response_code(200);
-        echo json_encode(["status" => "success", "message" => "Data saved successfully.", "file" => $file]);
-    } else {
-        http_response_code(500);
-        echo json_encode(["status" => "error", "message" => "Failed to save data."]);
-    }
+
+    // Write the content to a new file
+    file_put_contents($file, $content);
+
+    // Return a success response
+    http_response_code(200);
+    echo json_encode(["status" => "success", "message" => "Data saved successfully.", "file" => $file]);
 } else {
+    // Return an error response
     http_response_code(400);
     echo json_encode(["status" => "error", "message" => "No data received."]);
 }
+

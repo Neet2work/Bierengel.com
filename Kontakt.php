@@ -5,7 +5,7 @@
         <h1>Kontaktformular</h1>
         <form id="Kontaktformular" class="contact-form" style="max-width: 600px; margin: 0 auto;">
             <!-- Kundendaten -->
-            <fieldset style="border: 1px solid #ccc; padding: 15px; margin-bottom: 20px;">
+            <fieldset style="border: 1px solid #ccc; padding: 15px; margin-bottom: 20px; background-color: silver;">
                 <legend style="font-weight: bold;">Kundendaten</legend>
                 <label for="vorname">Vorname:</label><br>
                 <input type="text" id="vorname" name="vorname" required style="width: 97.5%; padding: 8px; margin-bottom: 10px;"><br>
@@ -21,7 +21,7 @@
             </fieldset>
 
             <!-- Betreff -->
-            <fieldset style="border: 1px solid #ccc; padding: 15px; margin-bottom: 20px;">
+            <fieldset style="border: 1px solid #ccc; padding: 15px; margin-bottom: 20px; background-color: silver;">
                 <legend style="font-weight: bold;">Nachricht</legend>
                 <label for="betreff">Betreff:</label><br>
                 <input type="text" id="betreff" name="betreff" required style="width: 97.5%; padding: 8px; margin-bottom: 10px;"><br>
