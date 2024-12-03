@@ -1,2 +1,0 @@
-oreder ALLOW,DENY
-DENY all
