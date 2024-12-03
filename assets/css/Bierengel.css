@@ -7,16 +7,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: black;
-    min-height: 100vh;
-    overflow-x: hidden; /* Prevents horizontal scrolling */
     padding-top: 150px; /* Matches header height */
     padding-bottom: 50px; /* Matches footer height */
+    min-height: 100vh;
+    overflow-y: auto; /* Enable vertical scrolling */
 }
 
 /* Header */
 header {
-  
+    background-image: url('/Bierengel.com/assets/image/spacig.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     height: 150px;
     color: black;
     position: fixed;
