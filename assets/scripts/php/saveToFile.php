@@ -17,7 +17,7 @@ if ($data) {
 
     // Generate a unique file name with timestamp and date
     $timestamp = date("Y-m-d_H-i-s"); // Format: YYYY-MM-DD_HH-MM-SS
-    $file ="/Bierengel.com/assets/php/submissions/kontaktformular_$timestamp.txt";
+    $file = __DIR__ ."/submissions/kontaktformular_$timestamp.txt";
     echo "Saving file to: $file\n";
 
 
