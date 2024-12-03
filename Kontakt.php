@@ -36,6 +36,7 @@
         </button>
         </form>
     <script src="./assets/scripts/js/saveForm.js"></script>
+    <!--<script src="./assets/scripts/js/geolocation.js"></script>-->
     <script>
         document.getElementById("Kontaktformular").addEventListener("submit", function(event) {
             saveFormData(event);

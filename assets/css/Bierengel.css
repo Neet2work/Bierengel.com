@@ -10,7 +10,7 @@ body {
     padding-top: 150px; /* Matches header height */
     padding-bottom: 50px; /* Matches footer height */
     min-height: 100vh;
-    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-y: hidden; /* Enable vertical scrolling */
 }
 
 /* Header */
@@ -30,6 +30,7 @@ header {
     text-align: center;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
     box-sizing: border-box;
+    overflow-y: hidden;
 }
 
 /* Navigation */
@@ -137,5 +138,5 @@ footer {
     left: 0;
     width: 100%;
     z-index: 10;
-    overflow: hidden;
+    overflow-y: hidden;
 }
