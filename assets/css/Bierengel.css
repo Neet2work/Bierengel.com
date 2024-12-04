@@ -74,6 +74,19 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+.media-container {
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+}
+
+.media-image{
+    text-align: right;
+    height: auto;
+    width: 25%;
+}
+
 /* Suchfeld Container */
 div.search-container {
     position: fixed; /* Fix the position to the top-right */
